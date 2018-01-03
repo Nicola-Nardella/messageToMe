@@ -1,0 +1,20 @@
+.Register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 400px;
+  &-title {
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+  }
+  &-button {
+    margin-top: 25px;
+  }
+}

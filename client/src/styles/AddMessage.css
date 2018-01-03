@@ -1,0 +1,8 @@
+.AddMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .AddMessage-content {
+    display: flex;
+    flex-direction: column; }

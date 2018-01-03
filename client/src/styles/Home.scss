@@ -1,0 +1,40 @@
+.Home {
+  padding-top: 50px;
+  text-align: center;
+  &-title {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+    img {
+      width: 90px;
+      height: 90px;
+      position: relative;
+      bottom: 7px;
+      @media (max-width: 768px) {
+        width: 50px;
+        height: 50px;
+        bottom: 3px;
+      }
+    }
+  }
+  &-subtitle {
+    padding: 20px;
+    font-size: 25px;
+  }
+  &-content {
+    font-size: 20px;
+    max-width: 410px;
+    padding: 0 10px;
+    margin: auto;
+    &-link {
+      text-decoration: none;
+      color: rgb(55, 158, 196);
+      padding: 0 5px;
+    }
+  }
+}
+

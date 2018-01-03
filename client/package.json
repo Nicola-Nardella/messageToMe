@@ -1,0 +1,32 @@
+{
+  "name": "message-to-me",
+  "author": "Nicola Nardella <nardellanicola10@gmail.com>",
+  "description": "WebApp for chat that use Node, React, Javascript, Apollo Client and Server",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apollo-client-preset": "^1.0.4",
+    "apollo-link-ws": "^1.0.2",
+    "classnames": "^2.2.5",
+    "graphql": "^0.11.7",
+    "graphql-tag": "^2.5.0",
+    "lodash": "^4.17.4",
+    "material-ui": "^0.20.0",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.2.0",
+    "react-apollo": "^2.0.1",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "subscriptions-transport-ws": "^0.9.4"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js"
+  }
+}

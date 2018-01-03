@@ -1,0 +1,57 @@
+.Login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 400px;
+  &-title {
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+  }
+  &-formFields {
+    max-width: 255px;
+  }
+  &-button {
+    margin-top: 25px;
+  }
+  &-error {
+    text-align: center;
+    max-width: 235px;
+    padding: 10px;
+    background-color: rgba(235, 35, 35, 0.938);
+  }
+  &-forgotPassword {
+    padding-top: 15px;
+    cursor: pointer;
+  }
+  &-modal {
+    position: absolute;
+    background: azure;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 60%;
+    }
+    &-close {
+      position: absolute;
+      color: rgb(0, 188, 212);
+      right: 15px;
+      top: 15px;
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+}
